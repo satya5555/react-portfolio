@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# React Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A personal portfolio website built using **React.js**, showcasing my projects, skills, and contact information.  
+Hosted on **Netlify** with continuous deployment from GitHub.
 
-## Available Scripts
+🌐 **Live Demo:** [satya-portfolio-site.netlify.app](https://satya-portfolio-site.netlify.app/)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Modular & Reusable Components:** Built with React.js for scalability and maintainability.
+- **Smooth Navigation:** Implemented with React Router for seamless page transitions.
+- **Dynamic Content Rendering:** Conditional rendering based on user interactions.
+- **Interactive UI Elements:** Skill indicators, progress bars, and project previews.
+- **Secure Contact Form:** Integrated EmailJS and DOMPurify for safe, backend-free messaging.
+- **Continuous Deployment:** Auto-deploy to Netlify upon GitHub push.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠 Frameworks & Libraries
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React.js** – Component-based UI development.
+- **React Router** – Client-side routing.
+- **EmailJS** – Send emails directly from the website.
+- **DOMPurify** – Input sanitization for security.
+- **CSS Modules** – Scoped and maintainable styling.
+- **classNames** – Conditional class handling.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📂 Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **Main File**
+- `App.js` – Central hub integrating all sections using React Router.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **Sections & Components**
 
-### `npm run eject`
+#### **About**
+- `About.js` – Main About section container.
+- `Avatar.js` – Dynamic avatar rendering based on active page.
+- `AboutMenu.js` – State management for subheadings and menu items.
+- `AboutMenuItem.js` – Individual menu item component.
+- `AboutSubheading.js` – Renders content for selected subheading.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### **Skills**
+- `SkillsMenu.js` – Categorized skill display (e.g., Web Development, Coursework).
+- `SkillsData.js` – Data file storing skill categories and details.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### **Projects**
+- `ProjectsMenu.js` – Displays project list with dynamic detail view.
+- `ProjectsData.js` – Stores project details.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### **Contact**
+- `ContactMenu.js` – Contact form with EmailJS integration and DOMPurify sanitization.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🎨 Styling & Assets
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **CSS Modules** – Scoped styles per component to prevent conflicts.
+- **classNames** – Conditional styling based on state.
+- **Custom Icons & Images** – Used across sections for visual enhancement.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 📦 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Hosting
+- Hosted on **Netlify**.
 
-### Analyzing the Bundle Size
+### Process
+1. Pushed code to GitHub repository.
+2. Connected GitHub repo to Netlify.
+3. Netlify auto-detected React app and configured build settings.
+4. Automatic deployments triggered on every push to `main`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🔒 Security
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **DOMPurify** ensures user inputs are sanitized to prevent XSS attacks.
+- Validation on contact form before submission.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## ⚙️ Installation & Setup
 
-### Deployment
+```bash
+# Clone the repository
+git clone https://github.com/satya5555/react-portfolio.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Navigate to project directory
+cd react-portfolio
 
-### `npm run build` fails to minify
+# Install dependencies
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Start the development server
+npm start
